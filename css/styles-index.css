@@ -1,0 +1,394 @@
+/* Geral */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Geral corpo */
+body {
+  background-color: #232323;
+}
+
+/* Carrinho de compras */
+.carrinho-de-compras {
+  width: 24px;
+  height: 24px;
+}
+
+/* Cabeçalho */
+#cabecalho {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
+  padding: 0rem 2rem;
+  background-color: #1c1c1c;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 10;
+}
+
+/* Imagem principal */
+#cabecalho > figure > img {
+  width: 90px;
+  height: 60px;
+}
+
+#cabecalho > nav {
+  /* Alinhamento */
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+#navbar {
+  /* Alinhamento */
+  display: flex;
+  gap: 3rem;
+}
+
+#navbar a {
+  /* Fonte */
+  color: white;
+  font-weight: bold;
+}
+/* Variavel */
+#navbar a:hover {
+  text-decoration: underline 2px;
+  transition: 0.5s;
+}
+
+#bt-entrar {
+  /* Visual */
+  display: inline-block;
+  padding: 0.3rem 1.2rem;
+  font-size: 17px;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 5px;
+  color: white;
+}
+/* Variavel */
+#bt-entrar:hover {
+  background-color: #737373;
+  color: #f28c28;
+  border: 3px solid #737373;
+  transition: 0.5s;
+}
+
+#bt-cadastrar {
+  /* Visual */
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 17px;
+  background-color: #f28c28;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+/* Variavel */
+#bt-cadastrar:hover {
+  background-color: #737373;
+  color: #f28c28;
+  transition: 0.5s;
+}
+
+/* Sessão Boas-vindas */
+#boas-vindas {
+  /* Imagem de fundo */
+  height: 650px;
+  background-image: url(../img/fundo-principal.jpg);
+  background-size: cover; /* Cobre toda a área da seção */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição */
+
+  /* Conteúdo */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#boas-vindas > h1 {
+  /* Alinhamento */
+  margin-top: 6rem;
+  margin-left: 5rem;
+
+  /* Visual */
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: normal;
+  color: white;
+}
+
+#boas-vindas > button {
+  /* Alinhamento */
+  padding: 0.6rem 1.7rem;
+  margin-top: 1.5rem;
+  margin-left: 5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+
+  /* Visual */
+  background-color: #f28c28;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+#boas-vindas > button:hover {
+  background-color: #eeeeee;
+  color: #f28c28;
+  transition: 0.5s;
+}
+
+/* Sessão Valores */
+#valores {
+  /* Container */
+  height: 300px;
+  background-color: #f5e6d3;
+}
+
+#valores ul > li > figure > img {
+  /* Ícones */
+  height: 32px;
+  width: 32px;
+}
+
+#valores > ul {
+  /* Alinhamento */
+  display: flex;
+  padding: 4rem;
+  text-align: center;
+  justify-content: space-around;
+}
+
+#valores ul > li {
+  /* Tamanho */
+  height: 154px;
+  width: 250px;
+}
+
+#valores ul > li > p {
+  /* Visual */
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #333;
+}
+
+#valores ul > li > h3 {
+  /* Visual */
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 12px 0;
+}
+
+/* Loja de itens */
+.img-cafes {
+  /* Tamanho das imagens */
+  width: 60px;
+  height: 107px;
+}
+
+.img-cafeteiras {
+  /* Tamanho das imagens */
+  width: 79px;
+  height: 102px;
+}
+
+.img-moedor {
+  /* Tamanho das imagens */
+  width: 41px;
+  height: 99px;
+}
+
+.img-xicaras {
+  /* Tamanho das imagens */
+  width: 94px;
+  height: 80px;
+  margin-top: 1rem;
+}
+
+#loja {
+  /* Alinhamento */
+  background-color: #f5e6d3;
+  justify-content: space-evenly;
+  height: 800px;
+  width: 1300px;
+  display: flex;
+  border-radius: 60px;
+  margin: 5rem auto;
+  align-items: center;
+}
+
+#loja > article {
+  /* Alinhamento */
+  width: 350px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#loja > article > ul {
+  /* Alinhamento */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  gap: 2rem;
+}
+
+#loja > article > ul > li {
+  /* Alinhamento */
+  width: 150px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#loja > article > ul > li > figure {
+  /* Alinhamento imagem */
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Botão Adicionar */
+.adicionar {
+  /* Alinhamento e estilização */
+  width: 100px;
+  height: 34px;
+  background-color: #f28c28;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+.adicionar:hover {
+  background-color: #eeeeee;
+  color: #f28c28;
+  transition: 0.5s;
+}
+.adicionar:focus {
+  background-color: #737373;
+  color: #f28c28;
+}
+
+/* Título da loja */
+#loja > article > h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+/* Título do produto */
+#loja > article > ul > li > h4 {
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+}
+
+/* Preço */
+#loja > article > ul > li > p {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  margin: 10px;
+}
+
+/* Separação da loja */
+.borda-loja {
+  border-left: 1.5px solid #4b2e2a;
+  border-right: 1.5px solid #4b2e2a;
+  padding: 0rem 3rem;
+}
+
+/* Rodapé do site */
+footer {
+  height: 300px;
+  background-color: #f5e6d3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0rem 12rem;
+  text-align: center;
+}
+
+footer > #icones {
+  display: flex;
+  gap: 2rem;
+}
+
+footer > #icones > svg {
+  height: 36px;
+  width: 36px;
+  color: #4e4e4e;
+}
+footer > #icones > svg:hover {
+  height: 36px;
+  width: 36px;
+  color: black;
+}
+
+/* Cookies */
+#links-rodape-2 {
+  display: flex;
+  gap: 3rem;
+}
+
+#links-rodape-2 > a {
+  color: #4e4e4e;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+}
+#links-rodape-2 > a:hover {
+  color: black;
+  text-decoration: underline 2px;
+  font-size: 17px;
+}
+
+/* Links + bandeira e globo */
+#links-rodape-1 {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+#links-rodape-1 > a {
+  /* Estilo */
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+}
+#links-rodape-1 > a:hover {
+  color: black;
+  text-decoration: underline 2px;
+  font-size: 18x;
+}
+
+#bandeira-globo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+footer > p {
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+  font-size: 15px;
+}
