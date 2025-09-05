@@ -1,9 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Entrar</title>
+    <title>Viego</title>
+    <link rel="stylesheet" href="css/styles-entrar.css" />
   </head>
-  <body></body>
+  <body>
+    <header id="cabecalho">
+      <figure>
+        <img src="img/Logo-viego.png" alt="logo cabecalho" />
+      </figure>
+      <nav>
+        <ul id="navbar">
+          <li><a href="suporte.html">Suporte</a></li>
+          <li><a href="loja.html">Loja</a></li>
+          <li><a href="index.html">Início</a></li>
+        </ul>
+        <a href="cadastrar.html" id="bt-cadastrar">Cadastrar</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="principal">
+        <article class="lado-formulario">
+          <h2>Cadastrar</h2>
+          <form
+            onsubmit="window.location.href='index-logada.html'; return false;"
+          >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email:"
+              required
+            />
+
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              placeholder="Senha:"
+              minlength="8"
+              pattern=".*[\W_].*"
+              title="A senha deve conter pelo menos um caractere especial (ex: @, #, $, %, &, *)"
+              required
+            />
+
+            <button type="submit">Entrar</button>
+          </form>
+        </article>
+        <aside class="lado-imagem">
+          <img src="img/Img-entrar.png" alt="Imagem entrar" />
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Viego® é uma marca registrada de Kaiuan Oliveira. ⓒ 2024 Viego
+        Cafeteria. Todos os direitos reservados. Outras marcas e nomes
+        comerciais mencionados neste material são de propriedade de seus
+        respectivos titulares.
+      </p>
+    </footer>
+  </body>
 </html>

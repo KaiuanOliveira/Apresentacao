@@ -1,9 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastrar</title>
+    <title>Viego</title>
+    <link rel="stylesheet" href="css/styles-cadastro.css" />
   </head>
-  <body></body>
+  <body>
+    <header id="cabecalho">
+      <figure>
+        <img src="img/Logo-viego.png" alt="logo cabecalho" />
+      </figure>
+      <nav>
+        <ul id="navbar">
+          <li><a href="suporte.html">Suporte</a></li>
+          <li><a href="loja.html">Loja</a></li>
+          <li><a href="index.html">Início</a></li>
+        </ul>
+        <a href="entrar.html" id="bt-entrar">Entrar</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="principal">
+        <article class="lado-formulario">
+          <h2>Cadastrar</h2>
+          <form onsubmit="window.location.href='entrar.html'; return false;">
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Nome:"
+              required
+            />
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email:"
+              required
+            />
+            <input
+              type="text"
+              id="cpf"
+              name="cpf"
+              placeholder="CPF:"
+              maxlength="14"
+              required
+            />
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              placeholder="Senha:"
+              minlength="8"
+              pattern=".*[\W_].*"
+              title="A senha deve conter pelo menos um caractere especial (ex: @, #, $, %, &, *)"
+              required
+            />
+
+            <button type="submit">Cadastrar</button>
+          </form>
+        </article>
+        <aside class="lado-imagem">
+          <img src="img/Img-cadastro.png" alt="Imagem cadastrar" />
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Viego® é uma marca registrada de Kaiuan Oliveira. ⓒ 2024 Viego
+        Cafeteria. Todos os direitos reservados. Outras marcas e nomes
+        comerciais mencionados neste material são de propriedade de seus
+        respectivos titulares.
+      </p>
+    </footer>
+  </body>
 </html>
