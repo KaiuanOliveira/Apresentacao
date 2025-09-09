@@ -3,7 +3,10 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: transparent;
+  background-image: url(../img/usuario.webp);
+  background-size: cover; /* faz a imagem preencher toda a bolinha */
+  background-position: center; /* centraliza a imagem */
+  background-repeat: no-repeat; /* evita repetição da imagem */
   margin-left: 1rem;
   border: 2px solid white;
   cursor: pointer;
