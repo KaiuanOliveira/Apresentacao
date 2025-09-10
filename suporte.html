@@ -4,68 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Viego</title>
-    <link rel="stylesheet" href="css/styles-suporte.css" />
+    <link rel="stylesheet" href="css/styles-index.css" />
   </head>
   <body>
-    <header id="cabecalho">
-      <figure>
-        <img src="img/Logo-viego.webp" alt="logo cabecalho" />
-      </figure>
-      <nav>
-        <ul id="navbar">
-          <li><a href="suporte.html">Suporte</a></li>
-          <li><a href="index.html#loja">Loja</a></li>
-          <li><a href="index.html">Início</a></li>
-        </ul>
-        <a href="entrar.html" id="bt-entrar">Entrar</a>
-        <a href="cadastrar.html" id="bt-cadastrar">Cadastrar</a>
-      </nav>
-    </header>
+    <div class="suporte-body">
+      <header>
+        <figure>
+          <img src="img/Logo-viego.webp" alt="logo cabecalho" />
+        </figure>
+        <nav>
+          <ul id="navbar">
+            <li><a href="suporte.html">Suporte</a></li>
+            <li><a href="index.html#loja">Loja</a></li>
+            <li><a href="index.html">Início</a></li>
+          </ul>
+          <a href="entrar.html" id="bt-entrar">Entrar</a>
+          <a href="cadastrar.html" id="bt-cadastrar">Cadastrar</a>
+        </nav>
+      </header>
+      <main>
+        <section id="principal">
+          <article class="lado-formulario">
+            <h2>Fale conosco</h2>
+            <form>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Nome:"
+                required
+              />
 
-    <main>
-      <section id="principal">
-        <article class="lado-formulario">
-          <h2>Fale conosco</h2>
-          <form action="#" method="post">
-            <input
-              type="text"
-              id="nome"
-              name="nome"
-              placeholder="Nome:"
-              required
-            />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email:"
+                required
+              />
 
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email:"
-              required
-            />
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                placeholder="Mensagem:"
+                required
+              ></textarea>
 
-            <textarea
-              id="mensagem"
-              name="mensagem"
-              placeholder="Mensagem:"
-              required
-            ></textarea>
-
-            <button type="submit">Enviar</button>
-          </form>
-        </article>
-        <aside class="lado-imagem">
-          <img src="img/Img-suporte.webp" alt="Imagem suporte" />
-        </aside>
-      </section>
-    </main>
-
-    <footer>
-      <p>
-        Viego® é uma marca registrada de Kaiuan Oliveira. ⓒ 2024 Viego
-        Cafeteria. Todos os direitos reservados. Outras marcas e nomes
-        comerciais mencionados neste material são de propriedade de seus
-        respectivos titulares.
-      </p>
-    </footer>
+              <button type="submit">Enviar</button>
+            </form>
+          </article>
+          <aside class="lado-imagem">
+            <img src="img/Img-suporte.webp" alt="Imagem suporte" />
+          </aside>
+        </section>
+      </main>
+      <footer>
+        <p>
+          Viego® é uma marca registrada de Kaiuan Oliveira. ⓒ 2024 Viego
+          Cafeteria. Todos os direitos reservados. Outras marcas e nomes
+          comerciais mencionados neste material são de propriedade de seus
+          respectivos titulares.
+        </p>
+      </footer>
+    </div>
   </body>
 </html>

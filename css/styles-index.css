@@ -9,12 +9,10 @@
 html {
   scroll-behavior: smooth;
 }
-
 /* Geral corpo */
 body {
   background-color: #232323;
 }
-
 /* Correção do "id cabecalho" para "header" */
 /* Cabeçalho */
 header {
@@ -27,27 +25,23 @@ header {
   position: relative;
   z-index: 10;
 }
-
 /* Imagem principal */
 header > figure > img {
   width: 90px;
   height: 60px;
-  margin: 3px;
+  margin: 7px;
 }
-
 header > nav {
   /* Alinhamento */
   display: flex;
   align-items: center;
   gap: 2.2rem;
 }
-
 #navbar {
   /* Alinhamento */
   display: flex;
   gap: 3rem;
 }
-
 #navbar a {
   /* Fonte */
   color: white;
@@ -58,7 +52,6 @@ header > nav {
   text-decoration: underline 2px;
   transition: 0.5s;
 }
-
 /* Correção do css dos botoes */
 #bt-entrar {
   padding: 0.3rem 1.2rem;
@@ -69,14 +62,12 @@ header > nav {
   color: white;
   cursor: pointer;
 }
-
 #bt-entrar:hover {
   background-color: #737373;
   color: #f28c28;
   border: 3px solid #737373;
   transition: 0.5s;
 }
-
 #bt-cadastrar {
   padding: 0.5rem 1rem;
   font-size: 17px;
@@ -86,13 +77,11 @@ header > nav {
   color: white;
   cursor: pointer;
 }
-
 #bt-cadastrar:hover {
   background-color: #737373;
   color: #f28c28;
   transition: 0.5s;
 }
-
 /* Sessão Boas-vindas */
 #boas-vindas {
   /* Imagem de fundo */
@@ -107,7 +96,6 @@ header > nav {
   flex-direction: column;
   align-items: start;
 }
-
 #boas-vindas > h1 {
   /* Alinhamento */
   margin-top: 6rem;
@@ -144,7 +132,6 @@ header > nav {
   background-color: #eeeeee;
   color: #f28c28;
 }
-
 /* Sessão Valores */
 #valores {
   /* Container */
@@ -167,7 +154,6 @@ header > nav {
   height: 154px;
   width: 250px;
 }
-
 #valores ul > li > p {
   /* Visual */
   font-family: "Open Sans", sans-serif;
@@ -175,7 +161,6 @@ header > nav {
   line-height: 1.4;
   color: #333;
 }
-
 #valores ul > li > h3 {
   /* Visual */
   font-family: "Playfair Display", serif;
@@ -183,33 +168,28 @@ header > nav {
   font-weight: 400;
   margin: 12px 0;
 }
-
 /* Loja de itens */
 .img-cafes {
   /* Tamanho das imagens */
   width: 60px;
   height: 107px;
 }
-
 .img-cafeteiras {
   /* Tamanho das imagens */
   width: 79px;
   height: 102px;
 }
-
 .img-moedor {
   /* Tamanho das imagens */
   width: 41px;
   height: 99px;
 }
-
 .img-xicaras {
   /* Tamanho das imagens */
   width: 94px;
   height: 80px;
   margin-top: 1rem;
 }
-
 #loja {
   /* Alinhamento */
   background-color: #f5e6d3;
@@ -221,7 +201,6 @@ header > nav {
   margin: 5rem auto;
   align-items: center;
 }
-
 #loja > article {
   /* Alinhamento */
   width: 350px;
@@ -231,7 +210,6 @@ header > nav {
   align-items: center;
   gap: 1.5rem;
 }
-
 #loja > article > ul {
   /* Alinhamento */
   display: flex;
@@ -240,7 +218,6 @@ header > nav {
   text-align: center;
   gap: 2rem;
 }
-
 #loja > article > ul > li {
   /* Alinhamento */
   width: 150px;
@@ -249,7 +226,6 @@ header > nav {
   flex-direction: column;
   align-items: center;
 }
-
 #loja > article > ul > li > figure {
   /* Alinhamento imagem */
   width: 120px;
@@ -258,7 +234,6 @@ header > nav {
   align-items: center;
   justify-content: center;
 }
-
 /* Botão Adicionar */
 .adicionar {
   /* Alinhamento e estilização */
@@ -283,35 +258,30 @@ header > nav {
   background-color: #737373;
   color: #f28c28;
 }
-
 /* Título da loja */
 #loja > article > h2 {
   font-family: "Playfair Display", serif;
   font-size: 24px;
   font-weight: normal;
 }
-
 /* Título do produto */
 #loja > article > ul > li > h4 {
   font-size: 16px;
   font-family: "Playfair Display", serif;
   font-weight: normal;
 }
-
 /* Preço */
 #loja > article > ul > li > p {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   margin: 10px;
 }
-
 /* Separação da loja */
 .borda-loja {
   border-left: 1.5px solid #4b2e2a;
   border-right: 1.5px solid #4b2e2a;
   padding: 0rem 3rem;
 }
-
 /* Rodapé do site */
 footer {
   height: 300px;
@@ -336,7 +306,6 @@ footer > #icones {
   font-size: 36px;
   color: black;
 }
-
 /* Cookies */
 /* Correção do css dos cookies */
 #links-rodape-2 ul {
@@ -357,7 +326,6 @@ footer > #icones {
   color: black;
   text-decoration: underline 2px;
 }
-
 /* Links + bandeira e globo */
 #links-rodape-1 {
   display: flex;
@@ -395,4 +363,318 @@ footer > p {
   color: #444;
   font-size: 15px;
   cursor: default;
+}
+
+/* CSS da pagina de login */
+/* Usuário logado */
+.bolinha-usuario {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(../img/usuario.webp);
+  background-size: cover; /* faz a imagem preencher toda a bolinha */
+  background-position: center; /* centraliza a imagem */
+  background-repeat: no-repeat; /* evita repetição da imagem */
+  margin-left: 1rem;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+/* CSS da pagina de suporte */
+/* Conteúdo principal */
+.suporte-body {
+  min-height: 100vh;
+  background-color: #f5e6d3;
+  display: flex;
+  flex-direction: column;
+}
+.suporte-body > main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* ocupa todo o espaço disponível */
+}
+.suporte-body #principal {
+  /* Container */
+  width: 1200px;
+  height: 550px;
+  background-color: #3e3e3e;
+  border-radius: 60px;
+
+  /* Formulario */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.suporte-body .lado-formulario {
+  width: 400px;
+  height: 440px;
+}
+.suporte-body .lado-formulario > h2 {
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+.suporte-body form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.suporte-body #nome,
+.suporte-body #email {
+  height: 35px;
+  width: 400px;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 28px;
+  padding: 0rem 0.5rem;
+}
+.suporte-body #mensagem {
+  height: 140px;
+  width: 400px;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 28px;
+}
+.suporte-body .lado-formulario > form > button {
+  width: 100px;
+  height: 38px;
+  background-color: #f28c28;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+.suporte-body .lado-formulario > form > button:hover {
+  background-color: white;
+  color: #f28c28;
+  transition: 0.5s;
+}
+/* Roda pé */
+.suporte-body footer {
+  background-color: #1c1c1c;
+  height: 80px;
+  padding: 0rem 10rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.suporte-body footer p {
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+  font-size: 15px;
+}
+
+/* CSS da pagina cadastro */
+.cadastro-body {
+  background-color: #f5e6d3;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.cadastro-body > main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* ocupa todo o espaço disponível */
+}
+.cadastro-body #principal {
+  /* Container */
+  width: 1200px;
+  height: 550px;
+  background-color: #3e3e3e;
+  border-radius: 60px;
+
+  /* Formulario */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.cadastro-body .lado-formulario {
+  width: 400px;
+  height: 440px;
+}
+.cadastro-body .lado-formulario > h2 {
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+.cadastro-body form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cadastro-body #nome,
+.cadastro-body #email,
+.cadastro-body #cpf {
+  height: 35px;
+  width: 400px;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 28px;
+  padding: 0rem 0.5rem;
+}
+.cadastro-body #senha {
+  height: 35px;
+  width: 400px;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 50px;
+  padding: 0rem 0.5rem;
+}
+.cadastro-body .lado-formulario > form > button {
+  width: 154px;
+  height: 38px;
+  background-color: #f28c28;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+.cadastro-body .lado-formulario > form > button:hover {
+  background-color: white;
+  color: #f28c28;
+  transition: 0.5s;
+}
+/* Roda pé */
+.cadastro-body footer {
+  background-color: #1c1c1c;
+  height: 80px;
+  padding: 0rem 10rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.cadastro-body footer p {
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+  font-size: 15px;
+}
+
+/* CSS da pagina entrar */
+.entrar-body {
+  background-color: #f5e6d3;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.entrar-body > main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.entrar-body #principal {
+  width: 1200px;
+  height: 550px;
+  background-color: #3e3e3e;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.entrar-body .lado-formulario {
+  width: 400px;
+  height: 440px;
+  margin-top: 4rem;
+}
+.entrar-body .lado-formulario > h2 {
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 57px;
+}
+.entrar-body form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.entrar-body #nome,
+.entrar-body #email,
+.entrar-body #cpf {
+  height: 35px;
+  width: 400px;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 28px;
+  padding: 0rem 0.5rem;
+}
+.entrar-body #senha {
+  height: 35px;
+  width: 400px;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 57px;
+  padding: 0rem 0.5rem;
+}
+.entrar-body .lado-formulario > form > button {
+  width: 181px;
+  height: 47px;
+  background-color: #f28c28;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+.entrar-body .lado-formulario > form > button:hover {
+  background-color: white;
+  color: #f28c28;
+  transition: 0.5s;
+}
+.entrar-body footer {
+  background-color: #1c1c1c;
+  height: 80px;
+  padding: 0rem 10rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.entrar-body footer p {
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+  font-size: 15px;
+}
+
+/* CSS sobre viego */
+.sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+}
+.sobre > h1 {
+  padding: 5rem;
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+  color: white;
+  background-color: #f28c28;
+  border-radius: 20px;
 }
