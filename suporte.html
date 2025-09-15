@@ -7,26 +7,56 @@
     <link rel="stylesheet" href="css/styles-index.css" />
   </head>
   <body>
+    <!-- Container edição suporte -->
     <div class="suporte-body">
+      <!-- Cabeçalho -->
       <header>
+        <!-- Logo cabeçalho -->
         <figure>
           <img src="img/Logo-viego.webp" alt="logo cabecalho" />
         </figure>
+
+        <!-- Container de navegação -->
         <nav>
+          <!-- Links de navegação -->
           <ul id="navbar">
             <li><a href="suporte.html">Suporte</a></li>
             <li><a href="index.html#loja">Loja</a></li>
             <li><a href="index.html">Início</a></li>
           </ul>
-          <a href="entrar.html" id="bt-entrar">Entrar</a>
-          <a href="cadastrar.html" id="bt-cadastrar">Cadastrar</a>
+
+          <!-- Botão página entrar -->
+          <button
+            id="bt-entrar"
+            type="button"
+            onclick="window.location.href='entrar.html'"
+          >
+            Entrar
+          </button>
+
+          <!-- Botão página cadastrar -->
+          <button
+            id="bt-cadastrar"
+            type="button"
+            onclick="window.location.href='cadastrar.html'"
+          >
+            Cadastrar
+          </button>
         </nav>
       </header>
+
+      <!-- Conteúdo principal -->
       <main>
+        <!-- Seção principal -->
         <section id="principal">
+          <!-- Lado do formulário -->
           <article class="lado-formulario">
+            <!-- Titulo -->
             <h2>Fale conosco</h2>
+
+            <!-- Container formulário -->
             <form>
+              <!-- Container nome -->
               <input
                 type="text"
                 id="nome"
@@ -35,6 +65,7 @@
                 required
               />
 
+              <!-- Container email -->
               <input
                 type="email"
                 id="email"
@@ -43,6 +74,7 @@
                 required
               />
 
+              <!-- Container textárea -->
               <textarea
                 id="mensagem"
                 name="mensagem"
@@ -50,15 +82,21 @@
                 required
               ></textarea>
 
+              <!-- Botão de enviar -->
               <button type="submit">Enviar</button>
             </form>
           </article>
+
+          <!-- Imagem do lado -->
           <aside class="lado-imagem">
             <img src="img/Img-suporte.webp" alt="Imagem suporte" />
           </aside>
         </section>
       </main>
+
+      <!-- Roda pé -->
       <footer>
+        <!-- Texto roda pé -->
         <p>
           Viego® é uma marca registrada de Kaiuan Oliveira. ⓒ 2024 Viego
           Cafeteria. Todos os direitos reservados. Outras marcas e nomes

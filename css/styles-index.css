@@ -5,16 +5,18 @@
   text-decoration: none;
   list-style: none;
 }
+
 /* Ativa rolagem suave ao navegar para âncoras (#id) via links ou botões */
 html {
   scroll-behavior: smooth;
 }
+
 /* Geral corpo */
 body {
   background-color: #232323;
 }
-/* Correção do "id cabecalho" para "header" */
-/* Cabeçalho */
+
+/* Edição do cabeçalho, alinhamento, cor de fundo, tamanho, e posição relativa com z-index para ficar por cima de tudo e mostrar a sombra */
 header {
   display: flex;
   justify-content: space-between;
@@ -25,34 +27,40 @@ header {
   position: relative;
   z-index: 10;
 }
-/* Imagem principal */
+
+/* Edição na imagem usada para ser a logo no cabeçalho, e espaçamento das bordas do cabeçalho */
 header > figure > img {
   width: 90px;
   height: 60px;
   margin: 7px;
 }
+
+/* Alinhamento nos links e botões do cabeçalho e espaço entre eles */
 header > nav {
-  /* Alinhamento */
   display: flex;
   align-items: center;
   gap: 2.2rem;
 }
+
+/* Quebra de linha nos links para levar para outras páginas e espaço entre os mesmos */
 #navbar {
-  /* Alinhamento */
   display: flex;
   gap: 3rem;
 }
+
+/* Cor do texto dos links e fonte em negrito */
 #navbar a {
-  /* Fonte */
   color: white;
   font-weight: bold;
 }
-/* Variavel */
+
+/* Linha embaixo do texto quando passo o mouse, e um atraso para deixar fluido */
 #navbar a:hover {
   text-decoration: underline 2px;
   transition: 0.5s;
 }
-/* Correção do css dos botoes */
+
+/* Edição botão entrar, tamanho, fonte, cor e arredondamento */
 #bt-entrar {
   padding: 0.3rem 1.2rem;
   font-size: 17px;
@@ -62,12 +70,16 @@ header > nav {
   color: white;
   cursor: pointer;
 }
+
+/* Edição para adicionar hover, diferenciamento quando passado o mouse */
 #bt-entrar:hover {
   background-color: #737373;
   color: #f28c28;
   border: 3px solid #737373;
   transition: 0.5s;
 }
+
+/* Edição botão cadastrar, tamanho, fonte, cor e arredondamento */
 #bt-cadastrar {
   padding: 0.5rem 1rem;
   font-size: 17px;
@@ -77,25 +89,30 @@ header > nav {
   color: white;
   cursor: pointer;
 }
+
+/* Edição para adicionar hover, diferenciamento quando passado o mouse */
 #bt-cadastrar:hover {
   background-color: #737373;
   color: #f28c28;
   transition: 0.5s;
 }
+
 /* Sessão Boas-vindas */
+/* Alinhamento dos textos principais, botão principal de acesso à loja e imagem de fundo principal do site */
 #boas-vindas {
-  /* Imagem de fundo */
   height: 650px;
   background-image: url(../img/fundo-principal.webp);
   background-size: cover; /* Cobre toda a área da seção */
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita repetição */
 
-  /* Conteúdo */
+  /* Alinhamento do texto principal */
   display: flex;
   flex-direction: column;
   align-items: start;
 }
+
+/* Edição no texto especificamente, fonte usada, cor, tamanho, retirada do negrito e espaço solicitado */
 #boas-vindas > h1 {
   /* Alinhamento */
   margin-top: 6rem;
@@ -108,7 +125,7 @@ header > nav {
   color: white;
 }
 
-/* Correção no css do botão */
+/* Edição no botão da loja, tamanho, espaço interno, espaço solicitado, espaço entre título e ícone, cor de fundo, cor de fonte, arredondamento nas bordas e tamanho da fonte */
 #btn-loja {
   /* Alinhamento */
   padding: 0.6rem 1.7rem;
@@ -128,47 +145,56 @@ header > nav {
   cursor: pointer;
   transition: 0.5s;
 }
+
+/* Edição para adicionar hover, diferenciamento quando passado o mouse */
 #btn-loja:hover {
   background-color: #eeeeee;
   color: #f28c28;
 }
-/* Sessão Valores */
+
+/* Tamanho container de valores e cor de fundo */
 #valores {
   /* Container */
   height: 300px;
   background-color: #f5e6d3;
 }
-/* Correção: tamanho dos icones valores */
+
+/* Tamanho dos ícones que aparecem em cima dos textos */
 .icone-valores {
   font-size: 32px;
 }
+
+/* Alinhamento do container dos textos, espaço das bordas, espaço ao redor de cada item e centralização */
 #valores > ul {
-  /* Alinhamento */
   display: flex;
   padding: 4rem;
   text-align: center;
   justify-content: space-around;
 }
+
+/* Tamanho específico de cada bloco usado para enquadrar o título, ícone e texto */
 #valores ul > li {
-  /* Tamanho */
   height: 154px;
   width: 250px;
 }
+
+/* Fonte usada no texto dos valores, tamanho, espaço nas linhas e cor */
 #valores ul > li > p {
-  /* Visual */
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.4;
   color: #333;
 }
+
+/* Fonte usada no título dos valores, tamanho, espaço solicitado e cor */
 #valores ul > li > h3 {
-  /* Visual */
   font-family: "Playfair Display", serif;
   font-size: 22px;
   font-weight: 400;
   margin: 12px 0;
 }
-/* Loja de itens */
+
+/* Parte da loja */
 .img-cafes {
   /* Tamanho das imagens */
   width: 60px;
@@ -190,8 +216,9 @@ header > nav {
   height: 80px;
   margin-top: 1rem;
 }
+
+/* Cor de fundo da loja, espaçamento em cima e automático nas laterais, tamanho do container, alinhamento das lojas menores e arredondamento nas bordas */
 #loja {
-  /* Alinhamento */
   background-color: #f5e6d3;
   justify-content: space-evenly;
   height: 800px;
@@ -201,8 +228,9 @@ header > nav {
   margin: 5rem auto;
   align-items: center;
 }
+
+/* Tamanho de cada loja menor, centralização em coluna e espaçamento entre o título e a loja de itens */
 #loja > article {
-  /* Alinhamento */
   width: 350px;
   height: 700px;
   display: flex;
@@ -210,33 +238,36 @@ header > nav {
   align-items: center;
   gap: 1.5rem;
 }
+
+/* Centralização dos itens da loja, com quebra, espaço entre cada item, e espaço entre cada linha */
 #loja > article > ul {
-  /* Alinhamento */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
   gap: 2rem;
 }
+
+/* Tamanho de cada container usado para ser o item, também alinhei em coluna para título, preço e imagem ficarem um embaixo do outro */
 #loja > article > ul > li {
-  /* Alinhamento */
   width: 150px;
   height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* Tamanho do container usado para todas as imagens ficarem centralizadas */
 #loja > article > ul > li > figure {
-  /* Alinhamento imagem */
   width: 120px;
   height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-/* Botão Adicionar */
+
+/* Estilo do botão de adicionar ao carrinho, cor de fundo, espaço entre texto e ícone, cor do texto e fonte negrito */
 .adicionar {
-  /* Alinhamento e estilização */
   width: 100px;
   height: 34px;
   background-color: #f28c28;
@@ -249,40 +280,49 @@ header > nav {
   gap: 0.5rem;
   font-weight: bold;
 }
+
+/* Edição para hover (quando você passar o mouse) */
 .adicionar:hover {
   background-color: #eeeeee;
   color: #f28c28;
   transition: 0.5s;
 }
+
+/* Edição para quando você clicar realmente no botão de adicionar */
 .adicionar:focus {
   background-color: #737373;
   color: #f28c28;
 }
-/* Título da loja */
+
+/* Tamanho do título de cada loja, fonte utilizada e retirada do negrito */
 #loja > article > h2 {
   font-family: "Playfair Display", serif;
   font-size: 24px;
   font-weight: normal;
 }
-/* Título do produto */
+
+/* Tamanho do título de cada item da loja, fonte utilizada e retirada do negrito */
 #loja > article > ul > li > h4 {
   font-size: 16px;
   font-family: "Playfair Display", serif;
   font-weight: normal;
 }
-/* Preço */
+
+/* Tamanho de cada preço, fonte utilizada e espaçamento solicitado */
 #loja > article > ul > li > p {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   margin: 10px;
 }
-/* Separação da loja */
+
+/* Separação das lojas, foi adicionado apenas no container do meio para funcionar */
 .borda-loja {
   border-left: 1.5px solid #4b2e2a;
   border-right: 1.5px solid #4b2e2a;
   padding: 0rem 3rem;
 }
-/* Rodapé do site */
+
+/* Tamanho do rodapé, alinhamento em coluna, espaço entre tudo igual e espaçamento solicitado nas laterais */
 footer {
   height: 300px;
   background-color: #f5e6d3;
@@ -293,28 +333,34 @@ footer {
   padding: 0rem 12rem;
   text-align: center;
 }
+
+/* Espaçamento entre cada ícone e adição de flex para os itens se tornarem inline */
 footer > #icones {
   display: flex;
   gap: 2rem;
 }
-/* Correção: ajustes dos icones footer */
+
+/* Tamanho de cada ícone e cor de fundo dos mesmos */
 .icone-apps {
   font-size: 36px;
   color: #4e4e4e;
 }
+
+/* Edição de hover para estilo quando passar o mouse em cima */
 .icone-apps:hover {
   font-size: 36px;
   color: black;
 }
-/* Cookies */
-/* Correção do css dos cookies */
+
+/* Edição nos cookies do site, alinhamento, tamanho e espaçamento entre os links */
 #links-rodape-2 ul {
   display: flex;
   gap: 3rem;
   padding: 0;
   margin: 0;
-  list-style: none;
 }
+
+/* Edição no texto dos cookies, cor, fonte, tamanho e atraso para hover */
 #links-rodape-2 ul > li {
   color: #4e4e4e;
   font-family: "Open Sans", sans-serif;
@@ -322,42 +368,55 @@ footer > #icones {
   cursor: default; /* não é clicável */
   transition: 0.3s;
 }
+
+/* Edição para adicionar o hover, linha embaixo e cor mais forte */
 #links-rodape-2 ul > li:hover {
   color: black;
   text-decoration: underline 2px;
 }
-/* Links + bandeira e globo */
+
+/* Alinhamento nos links primários do rodapé junto com os ícones de bandeira e globo */
 #links-rodape-1 {
   display: flex;
   gap: 2rem;
   align-items: center;
 }
+
+/* Estilização dos links em si, fonte, cor, tamanho e negrito */
 #links-rodape-1 > a {
-  /* Estilo */
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: bold;
   color: #444;
 }
+
+/* Edição para hover, linha embaixo e cor mais escura */
 #links-rodape-1 > a:hover {
   color: black;
   text-decoration: underline 2px;
   font-size: 18x;
 }
+
+/* Alinhamento do globo com a bandeira */
 #bandeira-globo {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
 }
-/* Correção: tamanho dos icones adicionados */
+
+/* Edição no globo, tamanho para melhor centralização */
 .icone-footer-1 {
   font-size: 27px;
 }
+
+/* Edição na bandeira, tamanho para melhor centralização */
 .icone-footer-2 {
   font-size: 36px;
   cursor: default;
 }
+
+/* Tamanho do texto final do rodapé, cor e fonte */
 footer > p {
   font-family: "Open Sans", sans-serif;
   color: #444;
@@ -365,8 +424,8 @@ footer > p {
   cursor: default;
 }
 
-/* CSS da pagina de login */
-/* Usuário logado */
+/* CSS da página de login */
+/* Edição na bolinha do usuário, tamanho, arredondamento, imagem de fundo e centralização da mesma e borda fixa */
 .bolinha-usuario {
   width: 40px;
   height: 40px;
@@ -378,23 +437,26 @@ footer > p {
   margin-left: 1rem;
   border: 2px solid white;
   cursor: pointer;
-  transition: transform 0.2s;
 }
 
-/* CSS da pagina de suporte */
-/* Conteúdo principal */
+/* CSS da página de suporte */
+/* Centralização do corpo do site e uso obrigatório de todo o espaço para que o footer seja colocado no final da página */
 .suporte-body {
   min-height: 100vh;
   background-color: #f5e6d3;
   display: flex;
   flex-direction: column;
 }
+
+/* Edição no conteúdo principal para que ele ocupe todo espaço disponível e alinhamento do container principal no centro da tela */
 .suporte-body > main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1; /* ocupa todo o espaço disponível */
 }
+
+/* Edição no container principal, tamanho, cor de fundo e arredondamento, além da centralização do formulário e espaço entre a imagem e o mesmo */
 .suporte-body #principal {
   /* Container */
   width: 1200px;
@@ -402,16 +464,20 @@ footer > p {
   background-color: #3e3e3e;
   border-radius: 60px;
 
-  /* Formulario */
+  /* Formulário */
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: space-evenly;
 }
+
+/* Tamanho específico do lado do formulário */
 .suporte-body .lado-formulario {
   width: 400px;
   height: 440px;
 }
+
+/* Tamanho do título do formulário, cor, fonte utilizada e espaço do restante do formulário */
 .suporte-body .lado-formulario > h2 {
   font-family: "Playfair Display", serif;
   color: white;
@@ -419,11 +485,15 @@ footer > p {
   font-weight: normal;
   margin-bottom: 2rem;
 }
+
+/* Alinhamento em coluna de todo o formulário desde os inputs até o botão */
 .suporte-body form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* Edição nos inputs principais, tamanho, fonte, cor, arredondamento e espaçamento interno */
 .suporte-body #nome,
 .suporte-body #email {
   height: 35px;
@@ -435,6 +505,8 @@ footer > p {
   margin-bottom: 28px;
   padding: 0rem 0.5rem;
 }
+
+/* Edição no input de mensagem que é um pouco maior em altura mas segue o mesmo padrão de largura e demais coisas */
 .suporte-body #mensagem {
   height: 140px;
   width: 400px;
@@ -445,6 +517,8 @@ footer > p {
   padding: 0.5rem 0.5rem;
   margin-bottom: 28px;
 }
+
+/* Edição no botão de enviar do formulário, tamanho, cor, fonte, arredondamento e cor do texto */
 .suporte-body .lado-formulario > form > button {
   width: 100px;
   height: 38px;
@@ -456,12 +530,15 @@ footer > p {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
+
+/* Edição para hover no botão de enviar */
 .suporte-body .lado-formulario > form > button:hover {
   background-color: white;
   color: #f28c28;
   transition: 0.5s;
 }
-/* Roda pé */
+
+/* Tamanho do rodapé da página, cor de fundo, espaçamento interno e alinhamento */
 .suporte-body footer {
   background-color: #1c1c1c;
   height: 80px;
@@ -470,25 +547,32 @@ footer > p {
   display: flex;
   align-items: center;
 }
+
+/* Edição no texto do rodapé, fonte, cor e tamanho */
 .suporte-body footer p {
   font-family: "Open Sans", sans-serif;
   color: #444;
   font-size: 15px;
 }
 
-/* CSS da pagina cadastro */
+/* CSS da página cadastro */
+/* Centralização do corpo do site e uso obrigatório de todo o espaço para que o footer seja colocado no final da página */
 .cadastro-body {
   background-color: #f5e6d3;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+
+/* Edição no conteúdo principal para que ele ocupe todo espaço disponível e alinhamento do container principal no centro da tela */
 .cadastro-body > main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1; /* ocupa todo o espaço disponível */
 }
+
+/* Edição no container principal, tamanho, cor de fundo e arredondamento, além da centralização do formulário e espaço entre a imagem e o mesmo */
 .cadastro-body #principal {
   /* Container */
   width: 1200px;
@@ -496,16 +580,20 @@ footer > p {
   background-color: #3e3e3e;
   border-radius: 60px;
 
-  /* Formulario */
+  /* Formulário */
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: space-evenly;
 }
+
+/* Tamanho específico do lado do formulário */
 .cadastro-body .lado-formulario {
   width: 400px;
   height: 440px;
 }
+
+/* Tamanho do título do formulário, cor, fonte utilizada e espaço do restante do formulário */
 .cadastro-body .lado-formulario > h2 {
   font-family: "Playfair Display", serif;
   color: white;
@@ -513,11 +601,15 @@ footer > p {
   font-weight: normal;
   margin-bottom: 2rem;
 }
+
+/* Alinhamento em coluna de todo o formulário desde os inputs até o botão */
 .cadastro-body form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* Edição nos inputs principais, tamanho, fonte, cor, arredondamento e espaçamento interno */
 .cadastro-body #nome,
 .cadastro-body #email,
 .cadastro-body #cpf {
@@ -530,6 +622,8 @@ footer > p {
   margin-bottom: 28px;
   padding: 0rem 0.5rem;
 }
+
+/* Edição no input de senha igual a outros mas muda o espaçamento da parte de baixo para descer mais o botão */
 .cadastro-body #senha {
   height: 35px;
   width: 400px;
@@ -540,6 +634,8 @@ footer > p {
   margin-bottom: 50px;
   padding: 0rem 0.5rem;
 }
+
+/* Edição no botão de cadastro, tamanho, fonte, espaçamento, cor do texto e arredondamento */
 .cadastro-body .lado-formulario > form > button {
   width: 154px;
   height: 38px;
@@ -551,12 +647,15 @@ footer > p {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
+
+/* Edição para hover no botão de enviar */
 .cadastro-body .lado-formulario > form > button:hover {
   background-color: white;
   color: #f28c28;
   transition: 0.5s;
 }
-/* Roda pé */
+
+/* Tamanho do rodapé da página, cor de fundo, espaçamento interno e alinhamento */
 .cadastro-body footer {
   background-color: #1c1c1c;
   height: 80px;
@@ -565,25 +664,32 @@ footer > p {
   display: flex;
   align-items: center;
 }
+
+/* Edição no texto do rodapé, fonte, cor e tamanho */
 .cadastro-body footer p {
   font-family: "Open Sans", sans-serif;
   color: #444;
   font-size: 15px;
 }
 
-/* CSS da pagina entrar */
+/* CSS da página entrar */
+/* Centralização do corpo do site e uso obrigatório de todo o espaço para que o footer seja colocado no final da página */
 .entrar-body {
   background-color: #f5e6d3;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+
+/* Edição no conteúdo principal para que ele ocupe todo espaço disponível e alinhamento do container principal no centro da tela */
 .entrar-body > main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
 }
+
+/* Edição no container principal, tamanho, cor de fundo e arredondamento, além da centralização do formulário e espaço entre a imagem e o mesmo */
 .entrar-body #principal {
   width: 1200px;
   height: 550px;
@@ -594,11 +700,15 @@ footer > p {
   text-align: center;
   justify-content: space-evenly;
 }
+
+/* Tamanho específico do lado do formulário */
 .entrar-body .lado-formulario {
   width: 400px;
   height: 440px;
   margin-top: 4rem;
 }
+
+/* Tamanho do título do formulário, cor, fonte utilizada e espaço do restante do formulário */
 .entrar-body .lado-formulario > h2 {
   font-family: "Playfair Display", serif;
   color: white;
@@ -606,14 +716,17 @@ footer > p {
   font-weight: normal;
   margin-bottom: 57px;
 }
+
+/* Alinhamento em coluna de todo o formulário desde os inputs até o botão */
 .entrar-body form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* Edição nos inputs principais, tamanho, cor, espaçamento, tamanho do texto e arredondamento */
 .entrar-body #nome,
-.entrar-body #email,
-.entrar-body #cpf {
+.entrar-body #email {
   height: 35px;
   width: 400px;
   font-family: "Playfair Display", serif;
@@ -623,6 +736,8 @@ footer > p {
   margin-bottom: 28px;
   padding: 0rem 0.5rem;
 }
+
+/* Edição no input de senha igual a outros mas muda o espaçamento da parte de baixo para descer mais o botão */
 .entrar-body #senha {
   height: 35px;
   width: 400px;
@@ -633,6 +748,8 @@ footer > p {
   margin-bottom: 57px;
   padding: 0rem 0.5rem;
 }
+
+/* Edição no botão de entrar, tamanho, fonte, espaçamento, cor do texto e arredondamento */
 .entrar-body .lado-formulario > form > button {
   width: 181px;
   height: 47px;
@@ -644,11 +761,15 @@ footer > p {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
+
+/* Edição para hover no botão de enviar */
 .entrar-body .lado-formulario > form > button:hover {
   background-color: white;
   color: #f28c28;
   transition: 0.5s;
 }
+
+/* Tamanho do rodapé da página, cor de fundo, espaçamento interno e alinhamento */
 .entrar-body footer {
   background-color: #1c1c1c;
   height: 80px;
@@ -657,13 +778,15 @@ footer > p {
   display: flex;
   align-items: center;
 }
+
+/* Edição no texto do rodapé, fonte, cor e tamanho */
 .entrar-body footer p {
   font-family: "Open Sans", sans-serif;
   color: #444;
   font-size: 15px;
 }
 
-/* CSS sobre viego */
+/* CSS sobre Viego */
 .sobre {
   display: flex;
   align-items: center;

@@ -5,89 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Viego</title>
     <link rel="stylesheet" href="css/styles-index.css" />
-    <!-- link da biblioteca de ícones utilizada -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
   <body>
+    <!-- Cabeçalho do site -->
     <header>
+      <!-- logo do site -->
       <figure>
         <img src="img/Logo-viego.webp" alt="logo cabeçalho" />
-        <!-- Trocado o tipo do arquivo para maior fluidez e leveza no site (retirado "PNG", adicionado "WEBP") -->
+        <!-- Área de navegação -->
       </figure>
+
+      <!-- Área de navegação -->
       <nav>
+        <!-- Lista de links acessíveis -->
         <ul id="navbar">
           <li><a href="suporte.html">Suporte</a></li>
-          <!-- Correção no botão para levar para a loja -->
           <li><a href="#loja">Loja</a></li>
           <li><a href="index.html">Início</a></li>
         </ul>
+
+        <!-- Bolinha do usuário -->
         <div class="bolinha-usuario"></div>
       </nav>
     </header>
+
+    <!-- Conteúdo principal do site -->
     <main>
+      <!-- Seção de boas-vindas da página -->
       <section id="boas-vindas">
+        <!-- Texto que aparece por cima da imagem -->
         <h1>
           O melhor <br />
           café para <br />
           o seu dia.
         </h1>
-        <!-- Retirada a tag "svg" e adicionados os ícones -->
+
+        <!-- Formulário que faz a ação de descer até a loja -->
         <form action="#loja">
+          <!-- Botão da loja -->
           <button type="submit" id="btn-loja">
+            <!-- Ícone de carrinho do botão -->
             <i class="fa-solid fa-cart-shopping"></i>
             Explorar Loja
           </button>
         </form>
       </section>
 
+      <!-- Seção de valores, usada como separação de boas-vindas e loja-->
       <section id="valores">
+        <!-- Lista de valores separada em 4 blocos -->
         <ul>
+          <!-- Bloco 1 -->
           <li>
-            <!-- Retirada a tag "svg" e adicionados os ícones -->
+            <!-- Ícone do café -->
             <i class="fa-solid fa-mug-saucer icone-valores"></i>
+            <!-- Título do bloco -->
             <h3>Tradição do Café</h3>
+            <!-- Texto do bloco -->
             <p>
               Selecionamos grãos de alta qualidade, mantendo a essência da
               tradição do bom café.
             </p>
           </li>
+
+          <!-- Bloco 2 -->
           <li>
-            <!-- Retirada a tag "svg" e adicionados os ícones -->
+            <!-- Ícone da folha -->
             <i class="fa-solid fa-feather-pointed icone-valores"></i>
+            <!-- Título do bloco -->
             <h3>Sustentabilidade</h3>
+            <!-- Texto do bloco -->
             <p>
               Nosso cultivo respeita o meio ambiente e valoriza os produtores
               locais.
             </p>
           </li>
+
+          <!-- Bloco 3 -->
           <li>
-            <!-- Retirada a tag "svg" e adicionados os ícones -->
+            <!-- Ícone do raio -->
             <i class="fa-solid fa-bolt icone-valores"></i>
+            <!-- Título do bloco -->
             <h3>Energia para o Dia</h3>
+            <!-- Texto do bloco -->
             <p>
               Um café encorpado e saboroso para dar aquele impulso na sua
               rotina.
             </p>
           </li>
+
+          <!-- Bloco 4 -->
           <li>
-            <!-- Retirada a tag "svg" e adicionados os ícones -->
+            <!-- Ícone de pessoas -->
             <i class="fa-solid fa-users icone-valores"></i>
+            <!-- Título do bloco -->
             <h3>Comunidade</h3>
+            <!-- Texto do bloco -->
             <p>Mais que café, uma experiência de conexão e bons momentos.</p>
           </li>
         </ul>
       </section>
 
+      <!-- Seção da loja separada em 3 blocos -->
       <section id="loja">
+        <!-- Bloco 1 -->
         <article>
+          <!-- Título do bloco -->
           <h2>Cafés Viego</h2>
+          <!-- Container com os 6 itens da loja -->
           <ul class="loja">
+            <!-- Item 1 -->
             <li class="item-loja">
+              <!-- Imagem do item -->
               <figure>
-                <!-- Trocado o tipo do arquivo para maior fluidez e leveza no site (retirado "PNG", adicionado "WEBP") -->
                 <img
                   class="img-cafes"
                   src="img/cafe-marrom.webp"
@@ -95,16 +129,21 @@
                   loading="lazy"
                 />
               </figure>
+              <!-- Título do item -->
               <h4>Café intenso</h4>
+              <!-- Preço do item -->
               <p>R$ 39,99</p>
+              <!-- Botão adicionar -->
               <button class="adicionar">
-                <!-- Retirada a tag "svg" e adicionados os ícones -->
+                <!-- Texto e carrinho de compras -->
                 Add <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </li>
+
+            <!-- Item 2 -->
             <li class="item-loja">
+              <!-- Imagem do item -->
               <figure>
-                <!-- Trocado o tipo do arquivo para maior fluidez e leveza no site (retirado "PNG", adicionado "WEBP") -->
                 <img
                   class="img-cafes"
                   src="img/cafe-verde.webp"
@@ -112,16 +151,21 @@
                   loading="lazy"
                 />
               </figure>
+              <!-- Título do item -->
               <h4>Café tradicional</h4>
+              <!-- Preço do item -->
               <p>R$ 39,99</p>
+              <!-- Botão adicionar -->
               <button class="adicionar">
-                <!-- Retirada a tag "svg" e adicionados os ícones -->
+                <!-- Texto e carrinho de compras -->
                 Add <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </li>
+
+            <!-- Item 3 -->
             <li class="item-loja">
+              <!-- Imagem do item -->
               <figure>
-                <!-- Trocado o tipo do arquivo para maior fluidez e leveza no site (retirado "PNG", adicionado "WEBP") -->
                 <img
                   class="img-cafes"
                   src="img/cafe-azul.webp"
@@ -129,16 +173,21 @@
                   loading="lazy"
                 />
               </figure>
+              <!-- Título do item -->
               <h4>Café descafeinado</h4>
+              <!-- Preço do item -->
               <p>R$ 39,99</p>
+              <!-- Botão adicionar -->
               <button class="adicionar">
-                <!-- Retirada a tag "svg" e adicionados os ícones -->
+                <!-- Texto e carrinho de compras -->
                 Add <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </li>
+
+            <!-- Item 4 -->
             <li class="item-loja">
+              <!-- Imagem do item -->
               <figure>
-                <!-- Trocado o tipo do arquivo para maior fluidez e leveza no site (retirado "PNG", adicionado "WEBP") -->
                 <img
                   class="img-cafes"
                   src="img/cafe-vermelho.webp"
@@ -146,33 +195,43 @@
                   loading="lazy"
                 />
               </figure>
+              <!-- Título do item -->
               <h4>Café premium</h4>
+              <!-- Preço do item -->
               <p>R$ 39,99</p>
+              <!-- Botão adicionar -->
               <button class="adicionar">
-                <!-- Retirada a tag "svg" e adicionados os ícones -->
+                <!-- Texto e carrinho de compras -->
                 Add <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </li>
+
+            <!-- Item 5 -->
             <li class="item-loja">
+              <!-- Imagem do item -->
               <figure>
-                <!-- Trocado o tipo do arquivo para maior fluidez e leveza no site (retirado "PNG", adicionado "WEBP") -->
                 <img
                   class="img-cafes"
                   src="img/cafe-amarelo.webp"
-                  alt="Café amarelo"
+                  alt="Café da manhã"
                   loading="lazy"
                 />
               </figure>
+              <!-- Título do item -->
               <h4>Café da manhã</h4>
+              <!-- Preço do item -->
               <p>R$ 39,99</p>
+              <!-- Botão adicionar -->
               <button class="adicionar">
-                <!-- Retirada a tag "svg" e adicionados os ícones -->
+                <!-- Texto e carrinho de compras -->
                 Add <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </li>
+
+            <!-- Item 6 -->
             <li class="item-loja">
+              <!-- Imagem do item -->
               <figure>
-                <!-- Trocado o tipo do arquivo para maior fluidez e leveza no site (retirado "PNG", adicionado "WEBP") -->
                 <img
                   class="img-cafes"
                   src="img/cafe-amarelo.webp"
@@ -180,21 +239,29 @@
                   loading="lazy"
                 />
               </figure>
+              <!-- Título do item -->
               <h4>Café da tarde</h4>
+              <!-- Preço do item -->
               <p>R$ 39,99</p>
+              <!-- Botão adicionar -->
               <button class="adicionar">
-                <!-- Retirada a tag "svg" e adicionados os ícones -->
+                <!-- Texto e carrinho de compras -->
                 Add <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </li>
           </ul>
         </article>
+
+        <!-- Bloco 2 -->
         <article class="borda-loja">
+          <!-- Título do bloco -->
           <h2>Máquinas Viego</h2>
+          <!-- Container com os 6 itens da loja -->
           <ul class="loja">
+            <!-- Item 1 -->
             <li class="item-loja">
+              <!-- Imagem do item -->
               <figure>
-                <!-- Trocado o tipo do arquivo para maior fluidez e leveza no site (retirado "PNG", adicionado "WEBP") -->
                 <img
                   class="img-cafeteiras"
                   src="img/Cafeteira-preta.webp"
@@ -202,16 +269,21 @@
                   loading="lazy"
                 />
               </figure>
+              <!-- Título do item -->
               <h4>Cafeteira preta</h4>
+              <!-- Preço do item -->
               <p>R$ 119,98</p>
+              <!-- Botão adicionar -->
               <button class="adicionar">
-                <!-- Retirada a tag "svg" e adicionados os ícones -->
+                <!-- Texto e carrinho de compras -->
                 Add <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </li>
+
+            <!-- Item 2 -->
             <li class="item-loja">
+              <!-- Imagem do item -->
               <figure>
-                <!-- Trocado o tipo do arquivo para maior fluidez e leveza no site (retirado "PNG", adicionado "WEBP") -->
                 <img
                   class="img-moedor"
                   src="img/Moedor-preto.webp"
@@ -219,16 +291,21 @@
                   loading="lazy"
                 />
               </figure>
+              <!-- Título do item -->
               <h4>Moedor preto</h4>
+              <!-- Preço do item -->
               <p>R$ 59,99</p>
+              <!-- Botão adicionar -->
               <button class="adicionar">
-                <!-- Retirada a tag "svg" e adicionados os ícones -->
+                <!-- Texto e carrinho de compras -->
                 Add <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </li>
+
+            <!-- Item 3 -->
             <li class="item-loja">
+              <!-- Imagem do item -->
               <figure>
-                <!-- Trocado o tipo do arquivo para maior fluidez e leveza no site (retirado "PNG", adicionado "WEBP") -->
                 <img
                   class="img-cafeteiras"
                   src="img/Cafeteira-vermelha.webp"
@@ -236,16 +313,21 @@
                   loading="lazy"
                 />
               </figure>
+              <!-- Título do item -->
               <h4>Cafeteira vermelha</h4>
+              <!-- Preço do item -->
               <p>R$ 119,98</p>
+              <!-- Botão adicionar -->
               <button class="adicionar">
-                <!-- Retirada a tag "svg" e adicionados os ícones -->
+                <!-- Texto e carrinho de compras -->
                 Add <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </li>
+
+            <!-- Item 4 -->
             <li class="item-loja">
+              <!-- Imagem do item -->
               <figure>
-                <!-- Trocado o tipo do arquivo para maior fluidez e leveza no site (retirado "PNG", adicionado "WEBP") -->
                 <img
                   class="img-moedor"
                   src="img/Moedor-vermelho.webp"
@@ -253,16 +335,21 @@
                   loading="lazy"
                 />
               </figure>
+              <!-- Título do item -->
               <h4>Moedor vermelho</h4>
+              <!-- Preço do item -->
               <p>R$ 59,99</p>
+              <!-- Botão adicionar -->
               <button class="adicionar">
-                <!-- Retirada a tag "svg" e adicionados os ícones -->
+                <!-- Texto e carrinho de compras -->
                 Add <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </li>
+
+            <!-- Item 5 -->
             <li class="item-loja">
+              <!-- Imagem do item -->
               <figure>
-                <!-- Trocado o tipo do arquivo para maior fluidez e leveza no site (retirado "PNG", adicionado "WEBP") -->
                 <img
                   class="img-cafeteiras"
                   src="img/Cafeteira-verde.webp"
@@ -270,16 +357,21 @@
                   loading="lazy"
                 />
               </figure>
+              <!-- Título do item -->
               <h4>Cafeteira verde</h4>
+              <!-- Preço do item -->
               <p>R$ 119,98</p>
+              <!-- Botão adicionar -->
               <button class="adicionar">
-                <!-- Retirada a tag "svg" e adicionados os ícones -->
+                <!-- Texto e carrinho de compras -->
                 Add <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </li>
+
+            <!-- Item 6 -->
             <li class="item-loja">
+              <!-- Imagem do item -->
               <figure>
-                <!-- Trocado o tipo do arquivo para maior fluidez e leveza no site (retirado "PNG", adicionado "WEBP") -->
                 <img
                   class="img-moedor"
                   src="img/Moedor-verde.webp"
@@ -287,22 +379,29 @@
                   loading="lazy"
                 />
               </figure>
+              <!-- Título do item -->
               <h4>Moedor verde</h4>
+              <!-- Preço do item -->
               <p>R$ 59,99</p>
+              <!-- Botão adicionar -->
               <button class="adicionar">
-                <!-- Retirada a tag "svg" e adicionados os ícones -->
+                <!-- Texto e carrinho de compras -->
                 Add <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </li>
           </ul>
         </article>
 
+        <!-- Bloco 3 -->
         <article>
+          <!-- Título do bloco -->
           <h2>Xícaras Viego</h2>
+          <!-- Container com os 6 itens da loja -->
           <ul class="loja">
+            <!-- Item 1 -->
             <li class="item-loja">
+              <!-- Imagem do item -->
               <figure>
-                <!-- Trocado o tipo do arquivo para maior fluidez e leveza no site (retirado "PNG", adicionado "WEBP") -->
                 <img
                   class="img-xicaras"
                   src="img/Xicara-preta.webp"
@@ -310,16 +409,21 @@
                   loading="lazy"
                 />
               </figure>
+              <!-- Título do item -->
               <h4>Xícara viego preta</h4>
+              <!-- Preço do item -->
               <p>R$ 10,99</p>
+              <!-- Botão adicionar -->
               <button class="adicionar">
-                <!-- Retirada a tag "svg" e adicionados os ícones -->
+                <!-- Texto e carrinho de compras -->
                 Add <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </li>
+
+            <!-- Item 2 -->
             <li class="item-loja">
+              <!-- Imagem do item -->
               <figure>
-                <!-- Trocado o tipo do arquivo para maior fluidez e leveza no site (retirado "PNG", adicionado "WEBP") -->
                 <img
                   class="img-xicaras"
                   src="img/Xicara-verde.webp"
@@ -327,16 +431,21 @@
                   loading="lazy"
                 />
               </figure>
+              <!-- Título do item -->
               <h4>Xícara viego verde</h4>
+              <!-- Preço do item -->
               <p>R$ 10,99</p>
+              <!-- Botão adicionar -->
               <button class="adicionar">
-                <!-- Retirada a tag "svg" e adicionados os ícones -->
+                <!-- Texto e carrinho de compras -->
                 Add <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </li>
+
+            <!-- Item 3 -->
             <li class="item-loja">
+              <!-- Imagem do item -->
               <figure>
-                <!-- Trocado o tipo do arquivo para maior fluidez e leveza no site (retirado "PNG", adicionado "WEBP") -->
                 <img
                   class="img-xicaras"
                   src="img/Xicara-amarela.webp"
@@ -344,16 +453,21 @@
                   loading="lazy"
                 />
               </figure>
+              <!-- Título do item -->
               <h4>Xícara viego amarela</h4>
+              <!-- Preço do item -->
               <p>R$ 10,99</p>
+              <!-- Botão adicionar -->
               <button class="adicionar">
-                <!-- Retirada a tag "svg" e adicionados os ícones -->
+                <!-- Texto e carrinho de compras -->
                 Add <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </li>
+
+            <!-- Item 4 -->
             <li class="item-loja">
+              <!-- Imagem do item -->
               <figure>
-                <!-- Trocado o tipo do arquivo para maior fluidez e leveza no site (retirado "PNG", adicionado "WEBP") -->
                 <img
                   class="img-xicaras"
                   src="img/Xicara-azul.webp"
@@ -361,16 +475,21 @@
                   loading="lazy"
                 />
               </figure>
+              <!-- Título do item -->
               <h4>Xícara viego azul</h4>
+              <!-- Preço do item -->
               <p>R$ 10,99</p>
+              <!-- Botão adicionar -->
               <button class="adicionar">
-                <!-- Retirada a tag "svg" e adicionados os ícones -->
+                <!-- Texto e carrinho de compras -->
                 Add <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </li>
+
+            <!-- Item 5 -->
             <li class="item-loja">
+              <!-- Imagem do item -->
               <figure>
-                <!-- Trocado o tipo do arquivo para maior fluidez e leveza no site (retirado "PNG", adicionado "WEBP") -->
                 <img
                   class="img-xicaras"
                   src="img/Xicara-branca.webp"
@@ -378,16 +497,21 @@
                   loading="lazy"
                 />
               </figure>
+              <!-- Título do item -->
               <h4>Xícara viego branca</h4>
+              <!-- Preço do item -->
               <p>R$ 10,99</p>
+              <!-- Botão adicionar -->
               <button class="adicionar">
-                <!-- Retirada a tag "svg" e adicionados os ícones -->
+                <!-- Texto e carrinho de compras -->
                 Add <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </li>
+
+            <!-- Item 6 -->
             <li class="item-loja">
+              <!-- Imagem do item -->
               <figure>
-                <!-- Trocado o tipo do arquivo para maior fluidez e leveza no site (retirado "PNG", adicionado "WEBP") -->
                 <img
                   class="img-xicaras"
                   src="img/Xicara-laranja.webp"
@@ -395,10 +519,13 @@
                   loading="lazy"
                 />
               </figure>
+              <!-- Título do item -->
               <h4>Xícara viego laranja</h4>
+              <!-- Preço do item -->
               <p>R$ 10,99</p>
+              <!-- Botão adicionar -->
               <button class="adicionar">
-                <!-- Retirada a tag "svg" e adicionados os ícones -->
+                <!-- Texto e carrinho de compras -->
                 Add <i class="fa-solid fa-cart-shopping"></i>
               </button>
             </li>
@@ -406,68 +533,100 @@
         </article>
       </section>
     </main>
+
+    <!-- Rodapé da página -->
     <footer>
+      <!-- Área de navegação do rodapé -->
       <nav id="links-rodape-1">
-        <!-- Ajustado os links para acesso -->
+        <!-- links de acesso à página de suporte e sobre -->
         <a href="sobre.html">Sobre Viego</a>
         <a href="suporte.html">Contato</a>
+
+        <!-- Contêiner para centralização dos ícones -->
         <div id="bandeira-globo">
-          <!-- Correção: troca do "svg" para "ícone" -->
+          <!-- Edição no ícone -->
           <span class="icone-footer-1" role="img" aria-label="Globo">
+            <!-- Ícone em si -->
             <i class="fa-solid fa-earth-americas"></i>
           </span>
-          <!-- Retirada a tag "svg" e adicionados os ícones -->
+
+          <!-- Edição no ícone -->
           <span
             class="icone-footer-2"
             role="img"
             aria-label="Bandeira do Brasil"
           >
+            <!-- ícone em si -->
             🇧🇷
           </span>
         </div>
       </nav>
 
-      <!-- Foi trocado os links não direcionados por apenas textos -->
+      <!-- Contêiner de links com ícones de aplicativos -->
       <div id="icones">
+        <!-- Link -->
         <a
           href="https://www.instagram.com"
           class="icone-apps"
           aria-label="Instagram"
         >
+          <!-- ícone -->
           <i class="fa-brands fa-instagram" aria-hidden="true"></i>
         </a>
+
+        <!-- link -->
         <a
           href="https://www.facebook.com"
           class="icone-apps"
           aria-label="Facebook"
         >
+          <!-- Ícone -->
           <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
         </a>
+
+        <!-- Link -->
         <a
           href="https://www.twitter.com"
           class="icone-apps"
           aria-label="Twitter"
         >
+          <!-- Ícone -->
           <i class="fa-brands fa-twitter" aria-hidden="true"></i>
         </a>
+
+        <!-- Link -->
         <a
           href="https://www.youtube.com"
           class="icone-apps"
           aria-label="YouTube"
         >
+          <!-- Ícone -->
           <i class="fa-brands fa-youtube" aria-hidden="true"></i>
         </a>
       </div>
 
+      <!-- Supostos links de cookies -->
       <nav id="links-rodape-2">
+        <!-- lista de cookies -->
         <ul>
+          <!-- Item 1 -->
           <li>Cookies</li>
+
+          <!-- Item 2 -->
           <li>Termos e Condições de Uso</li>
+
+          <!-- Item 3 -->
           <li>FAQs</li>
+
+          <!-- Item 4 -->
           <li>Regulamento das Promoções</li>
+
+          <!-- Item 5 -->
           <li>Política de Privacidade</li>
         </ul>
       </nav>
+
+      <!-- Parágrafo final de fechamento -->
       <p>
         Viego® é uma marca registrada de Kaiuan Oliveira. ⓒ 2024 Viego
         Cafeteria. Todos os direitos reservados. Outras marcas e nomes

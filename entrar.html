@@ -7,28 +7,46 @@
     <link rel="stylesheet" href="css/styles-index.css" />
   </head>
   <body>
+    <!-- Container para edição da pagina entrar -->
     <div class="entrar-body">
+      <!-- Cabeçalho -->
       <header id="cabecalho">
+        <!-- Logo do cabeçalho -->
         <figure>
           <img src="img/Logo-viego.webp" alt="Logo do cabeçalho" />
         </figure>
+
+        <!-- Container de navegação -->
         <nav>
+          <!-- Links de navegação -->
           <ul id="navbar">
             <li><a href="suporte.html">Suporte</a></li>
             <li><a href="index.html#loja">Loja</a></li>
             <li><a href="index.html">Início</a></li>
           </ul>
-          <a href="cadastrar.html" id="bt-cadastrar">Cadastrar</a>
+
+          <!-- Botão página cadastrar -->
+          <button
+            id="bt-cadastrar"
+            type="button"
+            onclick="window.location.href='cadastrar.html'"
+          >
+            Cadastrar
+          </button>
         </nav>
       </header>
 
+      <!-- Conteúdo principal -->
       <main>
+        <!-- Seção principal -->
         <section id="principal">
+          <!-- Lado formulário -->
           <article class="lado-formulario">
+            <!-- Titulo -->
             <h2>Entrar</h2>
-            <form
-              onsubmit="window.location.href='index-logada.html'; return false;"
-            >
+            <!-- Container formulário -->
+            <form onsubmit="window.location.href='logada.html'; return false;">
+              <!-- Container email -->
               <input
                 type="email"
                 id="email"
@@ -37,6 +55,7 @@
                 required
               />
 
+              <!-- Container senha -->
               <input
                 type="password"
                 id="senha"
@@ -48,16 +67,21 @@
                 required
               />
 
+              <!-- Botão de entrar -->
               <button type="submit">Entrar</button>
             </form>
           </article>
+
+          <!-- Imagem do lado do formulário -->
           <aside class="lado-imagem">
             <img src="img/Img-entrar.webp" alt="Imagem de login" />
           </aside>
         </section>
       </main>
 
+      <!-- Roda pé da pagina -->
       <footer>
+        <!-- Texto do roda pé -->
         <p>
           Viego® é uma marca registrada de Kaiuan Oliveira. ⓒ 2024 Viego
           Cafeteria. Todos os direitos reservados. Outras marcas e nomes
